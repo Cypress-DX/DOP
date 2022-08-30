@@ -18,6 +18,8 @@ function App() {
     useEffect(()=>{fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
         .then(json => setGet(json))}, [])
+
+
     return (
         <div className="App">
             <Button
